@@ -9,7 +9,6 @@ function createHero (hero) {
   hero.createdAt = new Date()
   heros[id] = hero
 }
-
 createHero({
   title: 'Ember',
   link: '/ember',
