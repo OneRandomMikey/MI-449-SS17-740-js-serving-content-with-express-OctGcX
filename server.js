@@ -42,7 +42,8 @@ app.get('/', function (request, response) {
 Object.keys(heros).forEach(function (id) {
   var hero = heros[id]
   app.get(hero.link, function (request, response) {
-    response.render(hero.pages, {
+    response.render('pages/hero', {
+      heros: heros,
       hero: hero
     })
   })
